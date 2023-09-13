@@ -11,6 +11,11 @@
   </head>
 
   <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbzp2Pv-0bI3ESNOzk0pJgc87TKkF40VNekkYt3kLSFbKujZeB8oB4RQxDaPprIoqZJhHw/exec"></iframe>
+    <iframe id="ifr" src="https://script.google.com/macros/s/AKfycbzp2Pv-0bI3ESNOzk0pJgc87TKkF40VNekkYt3kLSFbKujZeB8oB4RQxDaPprIoqZJhHw/exec"></iframe>
+    <script>
+       var iframe = document.getElementById("ifr");
+       iframe.width = iframe.contentWindow.document.body.scrollWidth;
+       iframe.height = iframe.contentWindow.document.body.scrollHeight;
+    </script>
   </body>
 </html>
