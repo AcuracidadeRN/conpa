@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      iframe {
-        width: 100%;
-        height: auto;
-      }
-    </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-  </head>
-
-  <body>
-    <iframe id="ifr" src="https://script.google.com/macros/s/AKfycbzp2Pv-0bI3ESNOzk0pJgc87TKkF40VNekkYt3kLSFbKujZeB8oB4RQxDaPprIoqZJhHw/exec"></iframe>
-    <script>
-       var iframe = document.getElementById("ifr");
-       iframe.width = iframe.contentWindow.document.body.scrollWidth;
-       iframe.height = iframe.contentWindow.document.body.scrollHeight;
-    </script>
-  </body>
+   <head>
+      <script>
+         window.onload = function() {
+            var iframe = document.getElementById("myiframe");
+            iframe.width = iframe.contentWindow.document.body.scrollWidth;
+            iframe.height = iframe.contentWindow.document.body.scrollHeight;
+         }
+      </script>
+   </head>
+   <body>
+      <iframe id="myiframe" src="https://script.google.com/macros/s/AKfycbzp2Pv-0bI3ESNOzk0pJgc87TKkF40VNekkYt3kLSFbKujZeB8oB4RQxDaPprIoqZJhHw/exec"></iframe>
+   </body>
 </html>
